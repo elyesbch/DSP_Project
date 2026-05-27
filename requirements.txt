@@ -1,0 +1,10 @@
+bleak==0.22.3
+tzlocal
+ahrs
+vpython
+pandas
+numpy
+pytransform3d
+crcmod
+pyserial
+plotly
