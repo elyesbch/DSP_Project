@@ -14,7 +14,6 @@ from axiamo_lib.ellipsoid import EllipsoidTool
 from axiamo_lib.DumpFileParser import DumpFileParser
 import matplotlib.pyplot as plt
 
-
 class DataProcessor:
     def __init__(self, datafolder = "rawdata"):
         self.datafolder = datafolder
@@ -309,7 +308,11 @@ class DataProcessor:
 if __name__ == '__main__':
     parser = DumpFileParser()
     parser.find_and_parse_files()
-    dp = DataProcessor("rawdata/") 
+    dp = DataProcessor("rawdata/")
+    
+    cadence_vals, activity_vals = activity_classifier(dfAcc, fs)
+    print("Kadenzen (pro 5s):", cadence_vals)
+    print("Aktivitäten (1=Ruhe,2=Gehen,3=Laufen):", activity_vals)
 
     # You can use the following find the latest datafile, default is to loop through all fileS
     # You can also just give a fixed filename 
