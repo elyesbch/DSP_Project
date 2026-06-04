@@ -13,8 +13,6 @@ from axiamo_lib.Visualizer import Visualizer
 from axiamo_lib.ellipsoid import EllipsoidTool
 from axiamo_lib.DumpFileParser import DumpFileParser
 import matplotlib.pyplot as plt
-import Excersice_3
-
 
 class DataProcessor:
     def __init__(self, datafolder = "rawdata"):
