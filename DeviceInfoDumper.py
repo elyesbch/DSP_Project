@@ -191,7 +191,6 @@ class DeviceInfoDumper:
         Logger.info("Test done, returning from maintask")
         return AllGood
             
-        
 
 if __name__ == '__main__':
     dst = DeviceInfoDumper()
